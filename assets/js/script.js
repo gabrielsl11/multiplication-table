@@ -8,9 +8,13 @@ button.addEventListener('click', () => {
 
     if (number == 0) {
         table.innerHTML = 'Type a valid number';
+        document.getElementById('number').value = '';
+        document.getElementById('number').focus();
         return;
     } else if (number > 1000) {
         table.innerHTML = 'Type a number less than 1001.';
+        document.getElementById('number').value = '';
+        document.getElementById('number').focus();
         return;
     }
 
@@ -39,4 +43,7 @@ button.addEventListener('click', () => {
         table.appendChild(tr);
         i++;
     }
+
+    document.getElementById('number').value = '';
+    document.getElementById('number').focus();
 })
