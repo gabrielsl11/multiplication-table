@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --drcolor: #201E43;
+    --dcolor: #134B70;
+    --lcolor: #508C9B;
+    --lrcolor: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+    text-decoration: none;
+    user-select: none;
+    list-style: none;
+    transition: all .2s;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--drcolor);
+    gap: 45px;
+}
+
+h1, a {
+    color: var(--lrcolor);
+}
+
+section {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: var(--lrcolor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+div {
+    display: flex;
+}
+
+label {
+    display: flex;
+
+}
+
+input {
+    font-size: 1rem;
+    background: var(--lrcolor);
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-weight: 500;
+    padding: 7.5px 10px;
+    border-radius: 10px 0 0 10px;
+    width: 75%;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input:focus-visible {
+    border: 1px solid var(--dcolor);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lrcolor);
+    background: var(--dcolor);
+    border: none;
+    padding: 7.5px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    width: 25%;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
+
+.table {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+a:hover {
+    color: var(--lcolor);
+}
